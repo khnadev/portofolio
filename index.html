@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
       .roboto {
         font-family: "Roboto", sans-serif;
@@ -249,7 +250,7 @@
     </div>
 
     <!-- Content -->
-    <div class="mx-auto mt-10 px-6 md:px-10">
+    <div class="mx-auto mt-10 px-6 md:px-10 relative pb-5">
       <!-- hero section -->
       <div class="w-full flex flex-col-reverse md:flex-row items-center">
         <!-- Bagian Kiri (Teks) -->
@@ -317,6 +318,64 @@
           </div>
         </div>
       </div>
+      <!-- Featured Project -->
+      <div class="w-full mt-24">
+        <h1 class="text-3xl font-bold">Featured Project</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-9">
+          <!-- card -->
+          <div
+            data-aos="fade-left"
+            class="border-2 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] p-5 transition-all duration-150"
+          >
+            <img src="assets/dummy.jpeg" class="w-full border" alt="" />
+            <h1 class="font-bold mt-3 text-xl">Project Nguawor</h1>
+            <p class="text-md text-slate-500 leading-5 mt-2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            data-aos="fade-up"
+            class="border-2 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] p-5 transition-all duration-150"
+          >
+            <img src="assets/dummy.jpeg" class="w-full border" alt="" />
+            <h1 class="font-bold mt-3 text-xl">Project Nguawor</h1>
+            <p class="text-md text-slate-500 leading-5 mt-2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div
+            data-aos="fade-right"
+            class="border-2 border-black shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] p-5 transition-all duration-150"
+          >
+            <img src="assets/dummy.jpeg" class="w-full border" alt="" />
+            <h1 class="font-bold mt-3 text-xl">Project Nguawor</h1>
+            <p class="text-md text-slate-500 leading-5 mt-2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <a
+          href=""
+          class="flex mt-5 mx-auto items-center gap-2 w-fit px-4 py-2 text-sm font-bold text-black border-2 border-black shadow-[3px_3px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] transition-all duration-150 active:shadow-none active:translate-x-1 active:translate-y-1 animate-fade-top"
+        >
+          View my work
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
 
     <!-- Script untuk Toggle Menu Mobile -->
@@ -328,6 +387,12 @@
         mobileMenu.classList.toggle("scale-y-0");
         mobileMenu.classList.toggle("opacity-0");
       });
+    </script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
     <!-- 
