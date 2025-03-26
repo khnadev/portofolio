@@ -1,0 +1,134 @@
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+/* Fade In dari Kiri */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade In dari Atas */
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Zoom In */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Rotate In */
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+/* Bounce In */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Slide In dari Kanan */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Flip In */
+@keyframes flipIn {
+  from {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
+/* Shake */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+/* Tambahkan ini sebagai kelas */
+.animate-fade-left {
+  animation: fadeInLeft 0.8s ease-out;
+}
+.animate-fade-top {
+  animation: fadeInTop 0.8s ease-out;
+}
+.animate-zoom-in {
+  animation: zoomIn 0.8s ease-out;
+}
+.animate-rotate-in {
+  animation: rotateIn 0.8s ease-out;
+}
+.animate-bounce-in {
+  animation: bounceIn 0.8s ease-out;
+}
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out;
+}
+.animate-flip-in {
+  animation: flipIn 0.8s ease-out;
+}
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
